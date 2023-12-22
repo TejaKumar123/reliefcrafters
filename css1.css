@@ -1,0 +1,37 @@
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;	
+}
+::-webkit-scrollbar{width:0px;}
+body::-webkit-scrollbar{width:0px;}
+body,html{width:100%;height:100%;margin:0px;}
+body{background:url("image1/b.jpg");background-size:cover;background-repeat:no-repeat;background-attachment:fixed;}
+#header{width:100%;min-height:70px;border:none;display:flex;flex-direction:row;align-items:center;justify-content:center;position:fixed;z-index:1;top:0px;background:rgba(0,0,0,0.8);backdrop-filter:blur(6px);}
+#header li{list-style-type:none;font-size:230%;font-weight:700;color:white;}
+#con{width:100%;height:auto;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;margin-top:70px;flex-wrap:wrap;border:none;position:absolute;left:50%;transform:translateX(-50%);backdrop-filter:blur(4px) brightness(110%);}
+#solution{width:90%;height:auto;font-size:150%;margin-top:15px;border:none;color:black;}
+#solution p{line-height:1.5;text-indent:100px;}
+#con #image{width:90%;height:auto;display:flex;flex-direction:row;align-items:flex-start;justify-content:space-between;}
+#con #image div{width:230px;height:170px;border:none;border-radius:10px;overflow:hidden;box-shadow:0px 0px 7px black;transition:0.20s;}
+#con #image div img{width:100%;height:100%;}
+#con #image div:hover{transform:scale(1.1,1.1);}
+#con .block1{width:90%;height:auto;}
+#con .block1 h1{color:black;}
+#con .block1 h1::before{content:"";position:absolute;bottom:-5px;left:0px;width:50px;height:2px;background-color:black;}
+/*#con .block1 h1::before:hover{width:100%;}*/
+#con .block1 hr{height:3px;background-color:black;border:none;margin-top:5px;}
+#con .block1 img{border-radius:10px;width:280px;transition:0.2s;}
+#con .block1 img:hover{transform:scale(1.1,1.1);}
+#con .block1 p{line-height:1.5;font-size:150%;text-align:justify;}
+#valimg:hover{transform:scale(2,2) !important;}
+#tab{width:auto;height:auto;}
+#tab table{border-collapse:;}
+#tab tr:nth-child(even){background-color:white;}
+#tab tr:nth-child(odd){background-color:rgba(255,255,255,0.7);}
+#tab tr,td{border:none;text-align:center;padding:6px 30px;font-size:120%;transition:0.15s;}
+#tab tr td:first-child,#tab tr:first-child{background-color:rgba(0,0,0,1);color:white;}
+#tab tr:hover{transform:scale(1,1.1);}
+			
+			#con button{background-color:green;font-size:150%;border-radius:25px;border:none;outline:none;color:white;box-shadow:0px 0px 7px black;cursor:pointer;padding:10px 20px;}
+#con button:hover{background-color:white;color:black;}

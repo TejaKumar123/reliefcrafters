@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Solution</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" media="screen and (min-width:400px)" href="css1.css">
+		<link rel="stylesheet" media="screen and (max-width:400px)" href="css2.css">
+	</head>
+	<body>
+		<div id="header">
+			<li>Relief Crafters - RelaxoFlex Pro</li>	
+		</div>
+		<div id="con">
+			<div id="solution">
+				<h1 style="text-align:center;">Our Solution</h1>
+				<p>We provide all the above mentioned products into a single robotic arm and  provide this massage while the person is in different positions like sitting on a table, standing etc.., at a cheaper price and this is can be controlled through an application.
+We should just replace each component depending upon the the type of massage required.
+This can be useful both physiotherapists and common people too.</p>
+			
+			</div><br>
+			<div id="image">
+				<div><img src="image1/d.jpg"></div>
+				<div><img src="image1/a.jpg"></div>
+				<div><img src="image1/c.jpg"></div>
+				<div><img src="image1/b.jpg"></div>
+			</div><br><br>
+			<div class="block1">
+				<h1>Advantages of Vibrational massage</h1>
+				<hr style="width:490px;"><br>
+				<img src="image1/d.jpg" style="float:left;margin-right:30px;">
+				<p><b>Increased Blood Circulation:</b> Vibration can stimulate blood flow, promoting better circulation throughout the targeted areas.</p>
+<p><b>Muscle Relaxation:</b> Vibrations can help relax tense muscles and reduce muscle stiffness.</p>
+<p><b>Improved Lymphatic Drainage:</b> Vibration may enhance the movement of lymphatic fluid, contributing to the body's natural detoxification process.</p>
+<p><b>Parameters:</b> Frequency:<i>(20-120)hz</i> , Percussions: <i>1750-2400 per minute</i></p>
+			</div><br>
+			<div class="block1">
+				<h1 style="text-align:right;">Advantages of Rolling massage</h1>
+				<hr style="width:430px;float:right;"><br>
+				<img src="image1/c.jpg" style="float:right;margin-left:30px;">
+				<p><b>Spinal&nbspAlignment:</b> Rolling motions along the spine can contribute to better spinal alignment and posture.</p>
+<p><b>Muscle Stretching:</b> Rolling movements can gently stretch and elongate muscles, promoting flexibility.</p>
+<p><b>Stress Relief:</b> The rhythmic rolling can induce a calming effect, reducing stress and tension.</p>
+			</div><br><br>
+			<div class="block1">
+				<h1>Advantages of Compression massage</h1>
+				<hr style="width:500px;"><br>
+				<img src="image1/a.jpg" style="float:left;margin-right:30px;">
+				<img src="image1/e.png" id="valimg" style="float:left;margin-right:30px;width:320px;">
+				<p><b>Muscle Compression:</b> Compression can target specific muscle groups, providing a deep and concentrated massage.</p>
+<p><b>Joint Mobility:</b> Compression can help improve joint mobility and flexibility.</p>
+<p><b>Reduced Edema:</b> It may assist in reducing edema or swelling in certain areas of the body.</p>
+<p><b>Parameters: </b>Pressure: <i>220 KPa – 900KPa</i> , Surface of the contact : <i>Flat surface and Cushioned.</i></p>
+			</div><br><br>
+			<h1 style="font-size:40px;">Comparison Chart</h1><br>
+			<div id="tab">
+			</div>
+			<br></br><br>
+			<button onclick="location.replace('index.html')">BACK</button>
+			<br></br><br></br>
+		</div>
+	</body>
+	
+	
+	<script>
+		table=[
+				["","Relaxoflex Pro","Robo1","Robo2","Robo3"],
+				["Vibrational massage","Yes","Yes","No","No"],
+				["Rolling massage","Yes","No","Yes","No"],
+				["Compression massage","Yes","No","No","Yes"],
+				["Intensity massage","Yes","No","No","No"],
+				["Sitting position","Yes","No","No","Yes"],
+				["Standing position","Yes","No","No","No"],
+				["Lying position","Yes","Yes","Yes","Yes"],
+				["Scratch","Yes","No","No","Yes"]
+			];
+		text="<table>";
+		var i,j;
+		for(i=0;i<table.length;i++){
+			text+="<tr>";
+			for(j=0;j<table[i].length;j++){
+				text+="<td>"+table[i][j]+"</td>";
+			}
+			text+="</tr>";
+		}
+		text+="</table>";
+		document.getElementById("tab").innerHTML=text;
+	
+	</script>
+	
+	
+	
+</html>

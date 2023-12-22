@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Relief Crafters</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		
+		<style>
+			*{
+				margin:0px;
+				padding:0px;
+				box-sizing:border-box;
+				
+			}
+			::-webkit-scrollbar{width:0px;}
+			body::-webkit-scrollbar{width:0px;}
+			body,html{width:100%;margin:0px;padding:0px;height:100%;}
+			body{background:url("image1/c.jpg");background-size:cover;background-repeat:no-repeat;background-attachment:fixed;overflow-x:hidden;}
+			#header{width:100%;min-height:70px;border:none;display:flex;flex-direction:row;align-items:center;justify-content:center;position:fixed;z-index:1;top:0px;left:0px;background:rgba(0,0,0,0.8);backdrop-filter:blur(6px);}
+			#header li{list-style-type:none;font-size:230%;font-weight:700;color:white;}
+			#con{width:100%;height:auto;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;margin-top:70px;flex-wrap:wrap;border:none;position:absolute;left:50%;transform:translateX(-50%);backdrop-filter:blur(4px) brightness(100%);}
+			#about{width:90%;height:auto;border:none;margin-top:15px;color:black;padding:10px 15px;font-size:150%;}
+			#about p{line-height:1.5;}
+			#types{width:90%;height:auto;border:none;margin-top:15px;padding:10px 15px;font-size:130%;}
+			#types #images{width:100%;height:auto;border:none;display:flex;flex-direction:row;align-items:flex-start;justify-content:space-around;flex-wrap:wrap;}
+			#types #images div{width:200px;height:170px;border:none;border-radius:10px;overflow:hidden;box-shadow:0px 0px 7px black;transition:0.25s;margin-top:10px;}
+			#types #images div:hover{transform:scale(1.2,1.2);}
+			#types #images div img{width:100%;height:100%;}
+			#types p{line-height:1.5;font-size:120%;text-align:center;color:black;}
+			#con button{background-color:green;padding:10px 20px;font-size:150%;border-radius:25px;border:none;outline:none;color:white;box-shadow:0px 0px 7px black;cursor:pointer;}
+			#con button:hover{background-color:white;color:black;}
+			
+			@media only screen and (max-width:400px){
+				#header li{font-size:140%;}
+				#con button{font-size:130%;}
+				#types{font-size:100%;width:100%;}
+				#types p{font-size:150%;}
+				#about{width:100%;}
+			}
+		
+			
+		</style>
+		
+	</head>
+	<body>
+		<div id="header">
+			<li>Relief Crafters - RelaxoFlex Pro</li>	
+		</div>
+		<div id="con">
+			<div id="about">
+				<h1 style="text-align:center;color:black;">About</h1>
+				<p><span style="margin-left:70px;">In</span> the present market there are robots that can perform any one particular type of massage.<br>Now We are providing a single robotic arm that with detachable end effectors(robotic hands) and this can perform all type of massages that include Vibrations, heat application, kneading, rolling and vacuum cupping and everything can be controlled by your own hands with our application.</p>
+				<br>
+			</div>
+			<div id="types">
+				<h1 style="text-align:center;color:black;">There are different types of massagers available in the market.</h1><br>
+				<div id="images">
+					<div><img src="image/a.jpg"></div>
+					<div><img src="image/b.jpeg"></div>
+					<div><img src="image/c.jpg"></div>
+					<div><img src="image/d.jpg"></div>
+					<div><img src="image/e.jpg"></div>
+				</div><br>
+				<p>All the available solutions are  either <span style="color:red;">extremely expensive in the market or they only serve a single type of massage</span>.</p>
+			</div><br><br>
+			<button onclick="location.replace('solution.html')">EXPLORE to OUR SOLUTION</button>
+			<br><br><br><br>
+		</div>
+		
+		
+		
+	</body>
+</html>
